@@ -130,6 +130,9 @@ if (x !== 0) {
 }
 
 
+//-----------------------------------
+// let s = ? || default,
+
 // -----------------------------------
 const time = +prompt("please write number 0 to 59", "number")
 if (time >= 0 && time < 15) {
