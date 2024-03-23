@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #block__content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #counterBlock {
+            margin: 20px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pagination {
+            margin: 20px 0;
+            display: flex;
+        }
+
+        #text {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <form action="target" id="target">
+        <input type="text" name="firstname">
+        <input type="text" name="surname">
+        <input type="text" name="age">
+    </form>
+    <button class="btn">send</button>
+</div>
+<div id="block__content"></div>
+
+<div class="wrapper">counter reload page
+    <div id="counterBlock"> 0</div>
+    <button id="btn-reset-refresh">reset counter</button>
+
+</div>
+
+<div class="pagination">
+    <button id="Prev">Prev</button>
+    <div id="ContentPagination"></div>
+    <button id="Next">Next</button>
+</div>
+
+<div id="text">ALERT TEXT</div>
+<button id="delete-btn">delete text upon</button>
+
+<br/>
+<br/>
+
+<input id="age" aria-label="age" name="age" type="number">
+<button id="btn-improve-age">check</button>
+<br/>
+<br/>
+
+<div>
+    <input id="row" type="number" placeholder="row"><input id="items" type="number" placeholder="items"><input
+        id="content" type="text" placeholder="content">
+    <button id="create-table">Create</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

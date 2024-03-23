@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let currentDateTime = new Date().toLocaleString();
+    let data = JSON.parse(localStorage.getItem("arrDataOfUsers")) || []
+    data.push(currentDateTime)
+
+    console.log(data)
+    localStorage.setItem("arrDataOfUsers", JSON.stringify(data))
+
+</script>
+</body>
+</html>
